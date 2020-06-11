@@ -41,12 +41,11 @@ class Tree:
             node = traversal_queue.popleft()
             print('Added node to list {}'.format(node.data))
             list_of_nodes.append(node.data)
-
             if node.left_node:
-                print('Adding left node to traversalQuere {}'.format(node.left_node.data))
+                print('Adding left node to traversalQueue {}'.format(node.left_node.data))
                 traversal_queue.append(node.left_node)
             if node.right_node:
-                print('Adding right node to traversalQuere {}'.format(node.right_node.data))
+                print('Adding right node to traversalQueue {}'.format(node.right_node.data))
                 traversal_queue.append(node.right_node)
         return list_of_nodes
 
