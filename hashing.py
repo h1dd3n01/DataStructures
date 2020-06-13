@@ -42,6 +42,12 @@ class HashTable:
             # print(h)
         return None
 
+    def __setitem__(self, key, value):
+        self.put(key, value)
+
+    def __getitem__(self, item):
+        self.get(item)
+
 
 if __name__ == '__main__':
     c = HashTable()

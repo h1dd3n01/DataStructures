@@ -233,4 +233,4 @@ if __name__ == '__main__':
 
     # current = tree.search(200)
     # tree.inorder(current)
-    print(tree.bsf())
+    tree.bsf()
